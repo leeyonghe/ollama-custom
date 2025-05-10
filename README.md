@@ -1,248 +1,260 @@
 <div align="center">
-  <a href="https://ollama.com">
+  <a href="https://ollama.com">
     <img alt="ollama" height="200px" src="https://github.com/ollama/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7">
   </a>
 </div>
 
 # Ollama
 
-Get up and running with large language models.
-
-### macOS
-
-[Download](https://ollama.com/download/Ollama-darwin.zip)
-
-### Windows
-
-[Download](https://ollama.com/download/OllamaSetup.exe)
-
-### Linux
-
-```shell
-curl -fsSL https://ollama.com/install.sh | sh
-```
-
-[Manual install instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md)
+[English] This project is for my personal customization and use. Please check the original project directly.
+[한국어] 이 프로젝트는 나 나름대로 커스터마이징 하여 사용하기 위함임. 원본은 해당 프로젝트에서 직접 확인하기 바람.
 
 ### Docker
 
-The official [Ollama Docker image](https://hub.docker.com/r/ollama/ollama) `ollama/ollama` is available on Docker Hub.
+[English] The official [Ollama Docker image](https://hub.docker.com/r/ollama/ollama) `ollama/ollama` is available on Docker Hub.
+[한국어] 공식 [Ollama Docker 이미지](https://hub.docker.com/r/ollama/ollama) `ollama/ollama`가 Docker Hub에서 사용 가능합니다.
 
-### Libraries
+### Libraries | 라이브러리
 
 - [ollama-python](https://github.com/ollama/ollama-python)
 - [ollama-js](https://github.com/ollama/ollama-js)
 
-### Community
+### Community | 커뮤니티
 
 - [Discord](https://discord.gg/ollama)
 - [Reddit](https://reddit.com/r/ollama)
 
-## Quickstart
+## Quick Start | 빠른 시작
 
-To run and chat with [Llama 3.2](https://ollama.com/library/llama3.2):
+[English] To chat with [Llama 3.2](https://ollama.com/library/llama3.2):
+[한국어] [Llama 3.2](https://ollama.com/library/llama3.2)와 대화하려면:
 
 ```shell
 ollama run llama3.2
 ```
 
-## Model library
+## Model Library | 모델 라이브러리
 
-Ollama supports a list of models available on [ollama.com/library](https://ollama.com/library 'ollama model library')
+[English] Ollama supports a list of models available at [ollama.com/library](https://ollama.com/library 'ollama model library').
+[한국어] Ollama는 [ollama.com/library](https://ollama.com/library 'ollama 모델 라이브러리')에서 사용 가능한 모델 목록을 지원합니다.
 
-Here are some example models that can be downloaded:
+[English] Here are some example models you can download:
+[한국어] 다음은 다운로드할 수 있는 예시 모델들입니다:
 
-| Model              | Parameters | Size  | Download                         |
-| ------------------ | ---------- | ----- | -------------------------------- |
-| Gemma 3            | 1B         | 815MB | `ollama run gemma3:1b`           |
-| Gemma 3            | 4B         | 3.3GB | `ollama run gemma3`              |
-| Gemma 3            | 12B        | 8.1GB | `ollama run gemma3:12b`          |
-| Gemma 3            | 27B        | 17GB  | `ollama run gemma3:27b`          |
-| QwQ                | 32B        | 20GB  | `ollama run qwq`                 |
-| DeepSeek-R1        | 7B         | 4.7GB | `ollama run deepseek-r1`         |
-| DeepSeek-R1        | 671B       | 404GB | `ollama run deepseek-r1:671b`    |
-| Llama 4            | 109B       | 67GB  | `ollama run llama4:scout`        |
-| Llama 4            | 400B       | 245GB | `ollama run llama4:maverick`     |
-| Llama 3.3          | 70B        | 43GB  | `ollama run llama3.3`            |
-| Llama 3.2          | 3B         | 2.0GB | `ollama run llama3.2`            |
-| Llama 3.2          | 1B         | 1.3GB | `ollama run llama3.2:1b`         |
-| Llama 3.2 Vision   | 11B        | 7.9GB | `ollama run llama3.2-vision`     |
-| Llama 3.2 Vision   | 90B        | 55GB  | `ollama run llama3.2-vision:90b` |
-| Llama 3.1          | 8B         | 4.7GB | `ollama run llama3.1`            |
-| Llama 3.1          | 405B       | 231GB | `ollama run llama3.1:405b`       |
-| Phi 4              | 14B        | 9.1GB | `ollama run phi4`                |
-| Phi 4 Mini         | 3.8B       | 2.5GB | `ollama run phi4-mini`           |
-| Mistral            | 7B         | 4.1GB | `ollama run mistral`             |
-| Moondream 2        | 1.4B       | 829MB | `ollama run moondream`           |
-| Neural Chat        | 7B         | 4.1GB | `ollama run neural-chat`         |
-| Starling           | 7B         | 4.1GB | `ollama run starling-lm`         |
-| Code Llama         | 7B         | 3.8GB | `ollama run codellama`           |
-| Llama 2 Uncensored | 7B         | 3.8GB | `ollama run llama2-uncensored`   |
-| LLaVA              | 7B         | 4.5GB | `ollama run llava`               |
-| Granite-3.3         | 8B         | 4.9GB | `ollama run granite3.3`          |
+| Model | Parameters | Size | Download |
+|-------|------------|------|----------|
+| 모델 | 파라미터 | 크기 | 다운로드 |
+
+| Gemma 3 | 1B | 815MB | `ollama run gemma3:1b` |
+| Gemma 3 | 4B | 3.3GB | `ollama run gemma3` |
+| Gemma 3 | 12B | 8.1GB | `ollama run gemma3:12b` |
+| Gemma 3 | 27B | 17GB | `ollama run gemma3:27b` |
+| QwQ | 32B | 20GB | `ollama run qwq` |
+| DeepSeek-R1 | 7B | 4.7GB | `ollama run deepseek-r1` |
+| DeepSeek-R1 | 671B | 404GB | `ollama run deepseek-r1:671b` |
+| Llama 4 | 109B | 67GB | `ollama run llama4:scout` |
+| Llama 4 | 400B | 245GB | `ollama run llama4:maverick` |
+| Llama 3.3 | 70B | 43GB | `ollama run llama3.3` |
+| Llama 3.2 | 3B | 2.0GB | `ollama run llama3.2` |
+| Llama 3.2 | 1B | 1.3GB | `ollama run llama3.2:1b` |
+| Llama 3.2 Vision | 11B | 7.9GB | `ollama run llama3.2-vision` |
+| Llama 3.2 Vision | 90B | 55GB | `ollama run llama3.2-vision:90b` |
+| Llama 3.1 | 8B | 4.7GB | `ollama run llama3.1` |
+| Llama 3.1 | 405B | 231GB | `ollama run llama3.1:405b` |
+| Phi 4 | 14B | 9.1GB | `ollama run phi4` |
+| Phi 4 Mini | 3.8B | 2.5GB | `ollama run phi4-mini` |
+| Mistral | 7B | 4.1GB | `ollama run mistral` |
+| Moondream 2 | 1.4B | 829MB | `ollama run moondream` |
+| Neural Chat | 7B | 4.1GB | `ollama run neural-chat` |
+| Starling | 7B | 4.1GB | `ollama run starling-lm` |
+| Code Llama | 7B | 3.8GB | `ollama run codellama` |
+| Llama 2 Uncensored | 7B | 3.8GB | `ollama run llama2-uncensored` |
+| LLaVA | 7B | 4.5GB | `ollama run llava` |
+| Granite-3.3 | 8B | 4.9GB | `ollama run granite3.3` |
 
 > [!NOTE]
-> You should have at least 8 GB of RAM available to run the 7B models, 16 GB to run the 13B models, and 32 GB to run the 33B models.
+> [English] 7B models require at least 8GB of RAM, 13B models require 16GB, and 33B models require 32GB of RAM.
+> [한국어] 7B 모델을 실행하려면 최소 8GB의 RAM이 필요하고, 13B 모델은 16GB, 33B 모델은 32GB의 RAM이 필요합니다.
 
-## Customize a model
+## Model Customization | 모델 커스터마이징
 
-### Import from GGUF
+### Importing from GGUF | GGUF에서 가져오기
 
-Ollama supports importing GGUF models in the Modelfile:
+[English] Ollama supports importing GGUF models in the Modelfile:
+[한국어] Ollama는 Modelfile에서 GGUF 모델 가져오기를 지원합니다:
 
-1. Create a file named `Modelfile`, with a `FROM` instruction with the local filepath to the model you want to import.
+1. [English] Create a file named `Modelfile` with the local file path of the model you want to import in the `FROM` directive.
+   [한국어] 가져오려는 모델의 로컬 파일 경로를 `FROM` 지시문으로 지정하여 `Modelfile`이라는 파일을 생성합니다.
 
    ```
    FROM ./vicuna-33b.Q4_0.gguf
    ```
 
-2. Create the model in Ollama
+2. [English] Create the model in Ollama
+   [한국어] Ollama에서 모델 생성
 
    ```shell
    ollama create example -f Modelfile
    ```
 
-3. Run the model
+3. [English] Run the model
+   [한국어] 모델 실행
 
    ```shell
    ollama run example
    ```
 
-### Import from Safetensors
+### Importing from Safetensors | Safetensors에서 가져오기
 
-See the [guide](docs/import.md) on importing models for more information.
+[English] See the [import guide](docs/import.md) for more information.
+[한국어] 자세한 정보는 [가져오기 가이드](docs/import.md)를 참조하세요.
 
-### Customize a prompt
+### Prompt Customization | 프롬프트 커스터마이징
 
-Models from the Ollama library can be customized with a prompt. For example, to customize the `llama3.2` model:
+[English] Models in the Ollama library can be customized with prompts. For example, to customize the `llama3.2` model:
+[한국어] Ollama 라이브러리의 모델은 프롬프트로 커스터마이징할 수 있습니다. 예를 들어, `llama3.2` 모델을 커스터마이징하려면:
 
 ```shell
 ollama pull llama3.2
 ```
 
-Create a `Modelfile`:
+[English] Create a `Modelfile`:
+[한국어] `Modelfile` 생성:
 
 ```
 FROM llama3.2
 
-# set the temperature to 1 [higher is more creative, lower is more coherent]
+# Set temperature to 1 [higher is more creative, lower is more consistent]
+# 온도를 1로 설정 [높을수록 더 창의적이고, 낮을수록 더 일관성 있음]
 PARAMETER temperature 1
 
-# set the system message
+# Set system message
+# 시스템 메시지 설정
 SYSTEM """
-You are Mario from Super Mario Bros. Answer as Mario, the assistant, only.
+당신은 슈퍼 마리오 브라더스의 마리오입니다. 마리오로서만 답변하세요.
 """
 ```
 
-Next, create and run the model:
+[English] Next, create and run the model:
+[한국어] 다음으로, 모델을 생성하고 실행합니다:
 
 ```
 ollama create mario -f ./Modelfile
 ollama run mario
->>> hi
-Hello! It's your friend Mario.
+>>> 안녕하세요
+안녕하세요! 당신의 친구 마리오입니다.
 ```
 
-For more information on working with a Modelfile, see the [Modelfile](docs/modelfile.md) documentation.
+[English] See the [Modelfile](docs/modelfile.md) documentation for more information about working with Modelfiles.
+[한국어] Modelfile 작업에 대한 자세한 정보는 [Modelfile](docs/modelfile.md) 문서를 참조하세요.
 
-## CLI Reference
+## CLI Reference | CLI 참조
 
-### Create a model
+### Model Creation | 모델 생성
 
-`ollama create` is used to create a model from a Modelfile.
+[English] `ollama create` is used to create a model from a Modelfile.
+[한국어] `ollama create`는 Modelfile에서 모델을 생성하는 데 사용됩니다.
 
 ```shell
 ollama create mymodel -f ./Modelfile
 ```
 
-### Pull a model
+### Model Pull | 모델 가져오기
 
 ```shell
 ollama pull llama3.2
 ```
 
-> This command can also be used to update a local model. Only the diff will be pulled.
+> [English] This command can also be used to update local models. Only the differences are pulled.
+> [한국어] 이 명령은 로컬 모델을 업데이트하는 데도 사용할 수 있습니다. 차이점만 가져옵니다.
 
-### Remove a model
+### Model Removal | 모델 제거
 
 ```shell
 ollama rm llama3.2
 ```
 
-### Copy a model
+### Model Copy | 모델 복사
 
 ```shell
 ollama cp llama3.2 my-model
 ```
 
-### Multiline input
+### Multi-line Input | 여러 줄 입력
 
-For multiline input, you can wrap text with `"""`:
+[English] You can wrap text in `"""` for multi-line input:
+[한국어] 여러 줄 입력을 위해 텍스트를 `"""`로 감쌀 수 있습니다:
 
 ```
->>> """Hello,
-... world!
+>>> """안녕하세요,
+... 세상!
 ... """
-I'm a basic program that prints the famous "Hello, world!" message to the console.
+저는 "안녕하세요, 세상!"이라는 유명한 메시지를 콘솔에 출력하는 기본 프로그램입니다.
 ```
 
-### Multimodal models
+### Multimodal Models | 멀티모달 모델
 
 ```
-ollama run llava "What's in this image? /Users/jmorgan/Desktop/smile.png"
+ollama run llava "이 이미지에 무엇이 있나요? /Users/jmorgan/Desktop/smile.png"
 ```
 
-> **Output**: The image features a yellow smiley face, which is likely the central focus of the picture.
+> [English] **Output**: The image contains a yellow smiley face, which appears to be the central element of the photo.
+> [한국어] **출력**: 이미지에는 노란색 웃는 얼굴이 있으며, 이는 아마도 사진의 중심이 되는 요소일 것입니다.
 
-### Pass the prompt as an argument
+### Passing Prompts as Arguments | 인자로 프롬프트 전달
 
 ```shell
-ollama run llama3.2 "Summarize this file: $(cat README.md)"
+ollama run llama3.2 "이 파일을 요약해주세요: $(cat README.md)"
 ```
 
-> **Output**: Ollama is a lightweight, extensible framework for building and running language models on the local machine. It provides a simple API for creating, running, and managing models, as well as a library of pre-built models that can be easily used in a variety of applications.
+> [English] **Output**: Ollama is a lightweight, extensible framework for building and running language models on your local machine. It provides a simple API for creating, running, and managing models, and a library of pre-built models that can be easily used in various applications.
+> [한국어] **출력**: Ollama는 로컬 머신에서 언어 모델을 구축하고 실행하기 위한 가볍고 확장 가능한 프레임워크입니다. 모델 생성, 실행 및 관리를 위한 간단한 API와 다양한 애플리케이션에서 쉽게 사용할 수 있는 사전 구축된 모델 라이브러리를 제공합니다.
 
-### Show model information
+### Show Model Information | 모델 정보 표시
 
 ```shell
 ollama show llama3.2
 ```
 
-### List models on your computer
+### List Models on Computer | 컴퓨터의 모델 목록 표시
 
 ```shell
 ollama list
 ```
 
-### List which models are currently loaded
+### Show Currently Loaded Models | 현재 로드된 모델 목록 표시
 
 ```shell
 ollama ps
 ```
 
-### Stop a model which is currently running
+### Stop Running Models | 실행 중인 모델 중지
 
 ```shell
 ollama stop llama3.2
 ```
 
-### Start Ollama
+### Start Ollama | Ollama 시작
 
-`ollama serve` is used when you want to start ollama without running the desktop application.
+[English] `ollama serve` is used when you want to start ollama without running the desktop application.
+[한국어] `ollama serve`는 데스크톱 애플리케이션을 실행하지 않고 ollama를 시작하고 싶을 때 사용됩니다.
 
-## Building
+## Building | 빌드
 
-See the [developer guide](https://github.com/ollama/ollama/blob/main/docs/development.md)
+[English] See the [developer guide](https://github.com/ollama/ollama/blob/main/docs/development.md)
+[한국어] [개발자 가이드](https://github.com/ollama/ollama/blob/main/docs/development.md)를 참조하세요.
 
-### Running local builds
+### Running Local Builds | 로컬 빌드 실행하기
 
-Next, start the server:
+[English] Next, start the server:
+[한국어] 다음으로, 서버를 시작합니다:
 
 ```shell
 ./ollama serve
 ```
 
-Finally, in a separate shell, run a model:
+[English] Finally, in a separate shell, run a model:
+[한국어] 마지막으로, 별도의 셸에서 모델을 실행합니다:
 
 ```shell
 ./ollama run llama3.2
@@ -250,33 +262,35 @@ Finally, in a separate shell, run a model:
 
 ## REST API
 
-Ollama has a REST API for running and managing models.
+[English] Ollama has a REST API for running and managing models.
+[한국어] Ollama는 모델을 실행하고 관리하기 위한 REST API를 제공합니다.
 
-### Generate a response
+### Generate a Response | 응답 생성하기
 
 ```shell
 curl http://localhost:11434/api/generate -d '{
   "model": "llama3.2",
-  "prompt":"Why is the sky blue?"
+  "prompt":"하늘이 왜 파란가요?"
 }'
 ```
 
-### Chat with a model
+### Chat with a Model | 모델과 대화하기
 
 ```shell
 curl http://localhost:11434/api/chat -d '{
   "model": "llama3.2",
   "messages": [
-    { "role": "user", "content": "why is the sky blue?" }
+    { "role": "user", "content": "하늘이 왜 파란가요?" }
   ]
 }'
 ```
 
-See the [API documentation](./docs/api.md) for all endpoints.
+[English] See the [API documentation](./docs/api.md) for all endpoints.
+[한국어] 모든 엔드포인트에 대해서는 [API 문서](./docs/api.md)를 참조하세요.
 
-## Community Integrations
+## Community Integrations | 커뮤니티 통합
 
-### Web & Desktop
+### Web & Desktop | 웹 & 데스크톱
 
 - [Open WebUI](https://github.com/open-webui/open-webui)
 - [SwiftChat (macOS with ReactNative)](https://github.com/aws-samples/swift-chat)
@@ -287,7 +301,7 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [Bionic GPT](https://github.com/bionic-gpt/bionic-gpt)
 - [HTML UI](https://github.com/rtcfirefly/ollama-ui)
 - [Saddle](https://github.com/jikkuatwork/saddle)
-- [TagSpaces](https://www.tagspaces.org) (A platform for file-based apps, [utilizing Ollama](https://docs.tagspaces.org/ai/) for the generation of tags and descriptions)
+- [TagSpaces](https://www.tagspaces.org) (파일 기반 앱을 위한 플랫폼, [Ollama 활용](https://docs.tagspaces.org/ai/)으로 태그와 설명 생성)
 - [Chatbot UI](https://github.com/ivanfioravanti/chatbot-ollama)
 - [Chatbot UI v2](https://github.com/mckaywrigley/chatbot-ui)
 - [Typescript UI](https://github.com/ollama-interface/Ollama-Gui?tab=readme-ov-file)
@@ -405,30 +419,50 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) (AI collaborative workspace with Ollama, cross-platform and self-hostable)
 - [Lumina](https://github.com/cushydigit/lumina.git) (A lightweight, minimal React.js frontend for interacting with Ollama servers)
 
-### Cloud
+### Cloud | 클라우드
 
 - [Google Cloud](https://cloud.google.com/run/docs/tutorials/gpu-gemma2-with-ollama)
 - [Fly.io](https://fly.io/docs/python/do-more/add-ollama/)
 - [Koyeb](https://www.koyeb.com/deploy/ollama)
 
-### Terminal
+### Mobile | 모바일
+
+- [SwiftChat](https://github.com/aws-samples/swift-chat) (Android, iOS, iPad를 위한 빠른 크로스 플랫폼 AI 채팅 앱)
+- [Enchanted](https://github.com/AugustDev/enchanted)
+- [Maid](https://github.com/Mobile-Artificial-Intelligence/maid)
+- [Ollama App](https://github.com/JHubi1/ollama-app) (Ollama를 위한 현대적이고 사용하기 쉬운 멀티플랫폼 클라이언트)
+- [ConfiChat](https://github.com/1runeberg/confichat) (선택적 암호화가 포함된 가벼운 독립형 멀티플랫폼 프라이버시 중심 LLM 채팅 인터페이스)
+- [Ollama Android Chat](https://github.com/sunshine0523/OllamaServer) (Termux가 필요 없이 Android 기기에서 원클릭으로 Ollama 서비스 시작)
+- [Reins](https://github.com/ibrahimcetin/reins) (파라미터를 쉽게 조정하고, 채팅별 시스템 프롬프트를 커스터마이징하며, 추론 모델 지원으로 AI 실험을 향상시킬 수 있습니다)
+
+### Extensions & Plugins | 확장 프로그램 & 플러그인
+
+- [Raycast extension](https://github.com/MassimilianoPasquini97/raycast_ollama)
+- [Discollama](https://github.com/mxyng/discollama) (Ollama 디스코드 채널 내의 디스코드 봇)
+- [Continue](https://github.com/continuedev/continue)
+- [Vibe](https://github.com/thewh1teagle/vibe) (Ollama로 회의 내용을 기록하고 분석)
+- [Obsidian Ollama plugin](https://github.com/hinterdupfinger/obsidian-ollama)
+- [Logseq Ollama plugin](https://github.com/omagdy7/ollama-logseq)
+- [NotesOllama](https://github.com/andersrex/notesollama) (Apple Notes Ollama 플러그인)
+
+### Terminal | 터미널
 
 - [oterm](https://github.com/ggozad/oterm)
-- [Ellama Emacs client](https://github.com/s-kostyaev/ellama)
-- [Emacs client](https://github.com/zweifisch/ollama)
-- [neollama](https://github.com/paradoxical-dev/neollama) UI client for interacting with models from within Neovim
+- [Ellama Emacs 클라이언트](https://github.com/s-kostyaev/ellama)
+- [Emacs 클라이언트](https://github.com/zweifisch/ollama)
+- [neollama](https://github.com/paradoxical-dev/neollama) Neovim 내에서 모델과 상호작용하기 위한 UI 클라이언트
 - [gen.nvim](https://github.com/David-Kunz/gen.nvim)
 - [ollama.nvim](https://github.com/nomnivore/ollama.nvim)
 - [ollero.nvim](https://github.com/marco-souza/ollero.nvim)
 - [ollama-chat.nvim](https://github.com/gerazov/ollama-chat.nvim)
 - [ogpt.nvim](https://github.com/huynle/ogpt.nvim)
-- [gptel Emacs client](https://github.com/karthink/gptel)
+- [gptel Emacs 클라이언트](https://github.com/karthink/gptel)
 - [Oatmeal](https://github.com/dustinblackman/oatmeal)
 - [cmdh](https://github.com/pgibler/cmdh)
 - [ooo](https://github.com/npahlfer/ooo)
-- [shell-pilot](https://github.com/reid41/shell-pilot)(Interact with models via pure shell scripts on Linux or macOS)
+- [shell-pilot](https://github.com/reid41/shell-pilot)(Linux나 macOS에서 순수 셸 스크립트를 통해 모델과 상호작용)
 - [tenere](https://github.com/pythops/tenere)
-- [llm-ollama](https://github.com/taketwo/llm-ollama) for [Datasette's LLM CLI](https://llm.datasette.io/en/stable/).
+- [llm-ollama](https://github.com/taketwo/llm-ollama) [Datasette의 LLM CLI](https://llm.datasette.io/en/stable/)용
 - [typechat-cli](https://github.com/anaisbetts/typechat-cli)
 - [ShellOracle](https://github.com/djcopley/ShellOracle)
 - [tlm](https://github.com/yusufcanb/tlm)
@@ -437,31 +471,31 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [ParLlama](https://github.com/paulrobello/parllama)
 - [Ollama eBook Summary](https://github.com/cognitivetech/ollama-ebook-summary/)
 - [Ollama Mixture of Experts (MOE) in 50 lines of code](https://github.com/rapidarchitect/ollama_moe)
-- [vim-intelligence-bridge](https://github.com/pepo-ec/vim-intelligence-bridge) Simple interaction of "Ollama" with the Vim editor
+- [vim-intelligence-bridge](https://github.com/pepo-ec/vim-intelligence-bridge) Vim 에디터와 "Ollama"의 간단한 상호작용
 - [x-cmd ollama](https://x-cmd.com/mod/ollama)
 - [bb7](https://github.com/drunkwcodes/bb7)
-- [SwollamaCLI](https://github.com/marcusziade/Swollama) bundled with the Swollama Swift package. [Demo](https://github.com/marcusziade/Swollama?tab=readme-ov-file#cli-usage)
-- [aichat](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI tools & agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
-- [PowershAI](https://github.com/rrg92/powershai) PowerShell module that brings AI to terminal on Windows, including support for Ollama
-- [DeepShell](https://github.com/Abyss-c0re/deepshell) Your self-hosted AI assistant. Interactive Shell, Files and Folders analysis.
-- [orbiton](https://github.com/xyproto/orbiton) Configuration-free text editor and IDE with support for tab completion with Ollama.
-- [orca-cli](https://github.com/molbal/orca-cli) Ollama Registry CLI Application - Browse, pull, and download models from Ollama Registry in your terminal.
-- [GGUF-to-Ollama](https://github.com/jonathanhecl/gguf-to-ollama) - Importing GGUF to Ollama made easy (multiplatform)
+- [SwollamaCLI](https://github.com/marcusziade/Swollama) Swollama Swift 패키지와 함께 번들로 제공. [데모](https://github.com/marcusziade/Swollama?tab=readme-ov-file#cli-usage)
+- [aichat](https://github.com/sigoden/aichat) OpenAI, Claude, Gemini, Ollama, Groq 등에 접근할 수 있는 셸 어시스턴트, 채팅-REPL, RAG, AI 도구 및 에이전트를 갖춘 올인원 LLM CLI 도구
+- [PowershAI](https://github.com/rrg92/powershai) Ollama 지원을 포함하여 Windows의 터미널에 AI를 제공하는 PowerShell 모듈
+- [DeepShell](https://github.com/Abyss-c0re/deepshell) 자체 호스팅 AI 어시스턴트. 대화형 셸, 파일 및 폴더 분석
+- [orbiton](https://github.com/xyproto/orbiton) Ollama를 통한 탭 완성을 지원하는 설정이 필요 없는 텍스트 에디터 및 IDE
+- [orca-cli](https://github.com/molbal/orca-cli) Ollama 레지스트리 CLI 애플리케이션 - 터미널에서 Ollama 레지스트리의 모델을 탐색, 가져오기 및 다운로드
+- [GGUF-to-Ollama](https://github.com/jonathanhecl/gguf-to-ollama) - GGUF를 Ollama로 쉽게 가져오기 (멀티플랫폼)
 
 ### Apple Vision Pro
 
-- [SwiftChat](https://github.com/aws-samples/swift-chat) (Cross-platform AI chat app supporting Apple Vision Pro via "Designed for iPad")
+- [SwiftChat](https://github.com/aws-samples/swift-chat) ("iPad용으로 설계"를 통해 Apple Vision Pro를 지원하는 크로스 플랫폼 AI 채팅 앱)
 - [Enchanted](https://github.com/AugustDev/enchanted)
 
-### Database
+### Database | 데이터베이스
 
-- [pgai](https://github.com/timescale/pgai) - PostgreSQL as a vector database (Create and search embeddings from Ollama models using pgvector)
-   - [Get started guide](https://github.com/timescale/pgai/blob/main/docs/vectorizer-quick-start.md)
-- [MindsDB](https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/handlers/ollama_handler/README.md) (Connects Ollama models with nearly 200 data platforms and apps)
-- [chromem-go](https://github.com/philippgille/chromem-go/blob/v0.5.0/embed_ollama.go) with [example](https://github.com/philippgille/chromem-go/tree/v0.5.0/examples/rag-wikipedia-ollama)
-- [Kangaroo](https://github.com/dbkangaroo/kangaroo) (AI-powered SQL client and admin tool for popular databases)
+- [pgai](https://github.com/timescale/pgai) - 벡터 데이터베이스로서의 PostgreSQL (pgvector를 사용하여 Ollama 모델에서 임베딩 생성 및 검색)
+   - [시작 가이드](https://github.com/timescale/pgai/blob/main/docs/vectorizer-quick-start.md)
+- [MindsDB](https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/handlers/ollama_handler/README.md) (Ollama 모델을 거의 200개의 데이터 플랫폼 및 앱과 연결)
+- [chromem-go](https://github.com/philippgille/chromem-go/blob/v0.5.0/embed_ollama.go) [예제](https://github.com/philippgille/chromem-go/tree/v0.5.0/examples/rag-wikipedia-ollama) 포함
+- [Kangaroo](https://github.com/dbkangaroo/kangaroo) (인기 있는 데이터베이스를 위한 AI 기반 SQL 클라이언트 및 관리 도구)
 
-### Package managers
+### Package Managers | 패키지 관리자
 
 - [Pacman](https://archlinux.org/packages/extra/x86_64/ollama/)
 - [Gentoo](https://github.com/gentoo/guru/tree/master/app-misc/ollama)
@@ -471,126 +505,19 @@ See the [API documentation](./docs/api.md) for all endpoints.
 - [Nix package](https://search.nixos.org/packages?show=ollama&from=0&size=50&sort=relevance&type=packages&query=ollama)
 - [Flox](https://flox.dev/blog/ollama-part-one)
 
-### Libraries
+### Libraries | 라이브러리
 
-- [LangChain](https://python.langchain.com/docs/integrations/chat/ollama/) and [LangChain.js](https://js.langchain.com/docs/integrations/chat/ollama/) with [example](https://js.langchain.com/docs/tutorials/local_rag/)
+- [LangChain](https://python.langchain.com/docs/integrations/chat/ollama/) 및 [LangChain.js](https://js.langchain.com/docs/integrations/chat/ollama/) [예제](https://js.langchain.com/docs/tutorials/local_rag/) 포함
 - [Firebase Genkit](https://firebase.google.com/docs/genkit/plugins/ollama)
 - [crewAI](https://github.com/crewAIInc/crewAI)
-- [Yacana](https://remembersoftwares.github.io/yacana/) (User-friendly multi-agent framework for brainstorming and executing predetermined flows with built-in tool integration)
-- [Spring AI](https://github.com/spring-projects/spring-ai) with [reference](https://docs.spring.io/spring-ai/reference/api/chat/ollama-chat.html) and [example](https://github.com/tzolov/ollama-tools)
-- [LangChainGo](https://github.com/tmc/langchaingo/) with [example](https://github.com/tmc/langchaingo/tree/main/examples/ollama-completion-example)
-- [LangChain4j](https://github.com/langchain4j/langchain4j) with [example](https://github.com/langchain4j/langchain4j-examples/tree/main/ollama-examples/src/main/java)
-- [LangChainRust](https://github.com/Abraxas-365/langchain-rust) with [example](https://github.com/Abraxas-365/langchain-rust/blob/main/examples/llm_ollama.rs)
-- [LangChain for .NET](https://github.com/tryAGI/LangChain) with [example](https://github.com/tryAGI/LangChain/blob/main/examples/LangChain.Samples.OpenAI/Program.cs)
-- [LLPhant](https://github.com/theodo-group/LLPhant?tab=readme-ov-file#ollama)
-- [LlamaIndex](https://docs.llamaindex.ai/en/stable/examples/llm/ollama/) and [LlamaIndexTS](https://ts.llamaindex.ai/modules/llms/available_llms/ollama)
-- [LiteLLM](https://github.com/BerriAI/litellm)
-- [OllamaFarm for Go](https://github.com/presbrey/ollamafarm)
-- [OllamaSharp for .NET](https://github.com/awaescher/OllamaSharp)
-- [Ollama for Ruby](https://github.com/gbaptista/ollama-ai)
-- [Ollama-rs for Rust](https://github.com/pepperoni21/ollama-rs)
-- [Ollama-hpp for C++](https://github.com/jmont-dev/ollama-hpp)
-- [Ollama4j for Java](https://github.com/ollama4j/ollama4j)
-- [ModelFusion Typescript Library](https://modelfusion.dev/integration/model-provider/ollama)
-- [OllamaKit for Swift](https://github.com/kevinhermawan/OllamaKit)
-- [Ollama for Dart](https://github.com/breitburg/dart-ollama)
-- [Ollama for Laravel](https://github.com/cloudstudio/ollama-laravel)
-- [LangChainDart](https://github.com/davidmigloz/langchain_dart)
-- [Semantic Kernel - Python](https://github.com/microsoft/semantic-kernel/tree/main/python/semantic_kernel/connectors/ai/ollama)
-- [Haystack](https://github.com/deepset-ai/haystack-integrations/blob/main/integrations/ollama.md)
-- [Elixir LangChain](https://github.com/brainlid/langchain)
-- [Ollama for R - rollama](https://github.com/JBGruber/rollama)
-- [Ollama for R - ollama-r](https://github.com/hauselin/ollama-r)
-- [Ollama-ex for Elixir](https://github.com/lebrunel/ollama-ex)
-- [Ollama Connector for SAP ABAP](https://github.com/b-tocs/abap_btocs_ollama)
-- [Testcontainers](https://testcontainers.com/modules/ollama/)
-- [Portkey](https://portkey.ai/docs/welcome/integration-guides/ollama)
-- [PromptingTools.jl](https://github.com/svilupp/PromptingTools.jl) with an [example](https://svilupp.github.io/PromptingTools.jl/dev/examples/working_with_ollama)
-- [LlamaScript](https://github.com/Project-Llama/llamascript)
-- [llm-axe](https://github.com/emirsahin1/llm-axe) (Python Toolkit for Building LLM Powered Apps)
-- [Gollm](https://docs.gollm.co/examples/ollama-example)
-- [Gollama for Golang](https://github.com/jonathanhecl/gollama)
-- [Ollamaclient for Golang](https://github.com/xyproto/ollamaclient)
-- [High-level function abstraction in Go](https://gitlab.com/tozd/go/fun)
-- [Ollama PHP](https://github.com/ArdaGnsrn/ollama-php)
-- [Agents-Flex for Java](https://github.com/agents-flex/agents-flex) with [example](https://github.com/agents-flex/agents-flex/tree/main/agents-flex-llm/agents-flex-llm-ollama/src/test/java/com/agentsflex/llm/ollama)
-- [Parakeet](https://github.com/parakeet-nest/parakeet) is a GoLang library, made to simplify the development of small generative AI applications with Ollama.
-- [Haverscript](https://github.com/andygill/haverscript) with [examples](https://github.com/andygill/haverscript/tree/main/examples)
-- [Ollama for Swift](https://github.com/mattt/ollama-swift)
-- [Swollama for Swift](https://github.com/marcusziade/Swollama) with [DocC](https://marcusziade.github.io/Swollama/documentation/swollama/)
-- [GoLamify](https://github.com/prasad89/golamify)
-- [Ollama for Haskell](https://github.com/tusharad/ollama-haskell)
-- [multi-llm-ts](https://github.com/nbonamy/multi-llm-ts) (A Typescript/JavaScript library allowing access to different LLM in a unified API)
-- [LlmTornado](https://github.com/lofcz/llmtornado) (C# library providing a unified interface for major FOSS & Commercial inference APIs)
-- [Ollama for Zig](https://github.com/dravenk/ollama-zig)
-- [Abso](https://github.com/lunary-ai/abso) (OpenAI-compatible TypeScript SDK for any LLM provider)
-- [Nichey](https://github.com/goodreasonai/nichey) is a Python package for generating custom wikis for your research topic
-- [Ollama for D](https://github.com/kassane/ollama-d)
+- [Yacana](https://remembersoftwares.github.io/yacana/) (내장된 도구 통합으로 미리 정의된 흐름을 브레인스토밍하고 실행하기 위한 사용자 친화적인 멀티 에이전트 프레임워크)
+- [Spring AI](https://github.com/spring-projects/spring-ai) [참조](https://docs.spring.io/spring-ai/reference/api/chat/ollama-chat.html) 및 [예제](https://github.com/tzolov/ollama-tools) 포함
 
-### Mobile
+### Observability | 관찰 가능성
 
-- [SwiftChat](https://github.com/aws-samples/swift-chat) (Lightning-fast Cross-platform AI chat app with native UI for Android, iOS, and iPad)
-- [Enchanted](https://github.com/AugustDev/enchanted)
-- [Maid](https://github.com/Mobile-Artificial-Intelligence/maid)
-- [Ollama App](https://github.com/JHubi1/ollama-app) (Modern and easy-to-use multi-platform client for Ollama)
-- [ConfiChat](https://github.com/1runeberg/confichat) (Lightweight, standalone, multi-platform, and privacy-focused LLM chat interface with optional encryption)
-- [Ollama Android Chat](https://github.com/sunshine0523/OllamaServer) (No need for Termux, start the Ollama service with one click on an Android device)
-- [Reins](https://github.com/ibrahimcetin/reins) (Easily tweak parameters, customize system prompts per chat, and enhance your AI experiments with reasoning model support.)
-
-### Extensions & Plugins
-
-- [Raycast extension](https://github.com/MassimilianoPasquini97/raycast_ollama)
-- [Discollama](https://github.com/mxyng/discollama) (Discord bot inside the Ollama discord channel)
-- [Continue](https://github.com/continuedev/continue)
-- [Vibe](https://github.com/thewh1teagle/vibe) (Transcribe and analyze meetings with Ollama)
-- [Obsidian Ollama plugin](https://github.com/hinterdupfinger/obsidian-ollama)
-- [Logseq Ollama plugin](https://github.com/omagdy7/ollama-logseq)
-- [NotesOllama](https://github.com/andersrex/notesollama) (Apple Notes Ollama plugin)
-- [Dagger Chatbot](https://github.com/samalba/dagger-chatbot)
-- [Discord AI Bot](https://github.com/mekb-turtle/discord-ai-bot)
-- [Ollama Telegram Bot](https://github.com/ruecat/ollama-telegram)
-- [Hass Ollama Conversation](https://github.com/ej52/hass-ollama-conversation)
-- [Rivet plugin](https://github.com/abrenneke/rivet-plugin-ollama)
-- [Obsidian BMO Chatbot plugin](https://github.com/longy2k/obsidian-bmo-chatbot)
-- [Cliobot](https://github.com/herval/cliobot) (Telegram bot with Ollama support)
-- [Copilot for Obsidian plugin](https://github.com/logancyang/obsidian-copilot)
-- [Obsidian Local GPT plugin](https://github.com/pfrankov/obsidian-local-gpt)
-- [Open Interpreter](https://docs.openinterpreter.com/language-model-setup/local-models/ollama)
-- [Llama Coder](https://github.com/ex3ndr/llama-coder) (Copilot alternative using Ollama)
-- [Ollama Copilot](https://github.com/bernardo-bruning/ollama-copilot) (Proxy that allows you to use Ollama as a copilot like GitHub Copilot)
-- [twinny](https://github.com/rjmacarthy/twinny) (Copilot and Copilot chat alternative using Ollama)
-- [Wingman-AI](https://github.com/RussellCanfield/wingman-ai) (Copilot code and chat alternative using Ollama and Hugging Face)
-- [Page Assist](https://github.com/n4ze3m/page-assist) (Chrome Extension)
-- [Plasmoid Ollama Control](https://github.com/imoize/plasmoid-ollamacontrol) (KDE Plasma extension that allows you to quickly manage/control Ollama model)
-- [AI Telegram Bot](https://github.com/tusharhero/aitelegrambot) (Telegram bot using Ollama in backend)
-- [AI ST Completion](https://github.com/yaroslavyaroslav/OpenAI-sublime-text) (Sublime Text 4 AI assistant plugin with Ollama support)
-- [Discord-Ollama Chat Bot](https://github.com/kevinthedang/discord-ollama) (Generalized TypeScript Discord Bot w/ Tuning Documentation)
-- [ChatGPTBox: All in one browser extension](https://github.com/josStorer/chatGPTBox) with [Integrating Tutorial](https://github.com/josStorer/chatGPTBox/issues/616#issuecomment-1975186467)
-- [Discord AI chat/moderation bot](https://github.com/rapmd73/Companion) Chat/moderation bot written in python. Uses Ollama to create personalities.
-- [Headless Ollama](https://github.com/nischalj10/headless-ollama) (Scripts to automatically install ollama client & models on any OS for apps that depend on ollama server)
-- [Terraform AWS Ollama & Open WebUI](https://github.com/xuyangbocn/terraform-aws-self-host-llm) (A Terraform module to deploy on AWS a ready-to-use Ollama service, together with its front-end Open WebUI service.)
-- [node-red-contrib-ollama](https://github.com/jakubburkiewicz/node-red-contrib-ollama)
-- [Local AI Helper](https://github.com/ivostoykov/localAI) (Chrome and Firefox extensions that enable interactions with the active tab and customisable API endpoints. Includes secure storage for user prompts.)
-- [vnc-lm](https://github.com/jake83741/vnc-lm) (Discord bot for messaging with LLMs through Ollama and LiteLLM. Seamlessly move between local and flagship models.)
-- [LSP-AI](https://github.com/SilasMarvin/lsp-ai) (Open-source language server for AI-powered functionality)
-- [QodeAssist](https://github.com/Palm1r/QodeAssist) (AI-powered coding assistant plugin for Qt Creator)
-- [Obsidian Quiz Generator plugin](https://github.com/ECuiDev/obsidian-quiz-generator)
-- [AI Summmary Helper plugin](https://github.com/philffm/ai-summary-helper)
-- [TextCraft](https://github.com/suncloudsmoon/TextCraft) (Copilot in Word alternative using Ollama)
-- [Alfred Ollama](https://github.com/zeitlings/alfred-ollama) (Alfred Workflow)
-- [TextLLaMA](https://github.com/adarshM84/TextLLaMA) A Chrome Extension that helps you write emails, correct grammar, and translate into any language
-- [Simple-Discord-AI](https://github.com/zyphixor/simple-discord-ai)
-- [LLM Telegram Bot](https://github.com/innightwolfsleep/llm_telegram_bot) (telegram bot, primary for RP. Oobabooga-like buttons, [A1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui) API integration e.t.c)
-- [mcp-llm](https://github.com/sammcj/mcp-llm) (MCP Server to allow LLMs to call other LLMs)
-
-### Supported backends
-
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) project founded by Georgi Gerganov.
-
-### Observability
-- [Opik](https://www.comet.com/docs/opik/cookbook/ollama) is an open-source platform to debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards. Opik supports native intergration to Ollama.
-- [Lunary](https://lunary.ai/docs/integrations/ollama) is the leading open-source LLM observability platform. It provides a variety of enterprise-grade features such as real-time analytics, prompt templates management, PII masking, and comprehensive agent tracing.
-- [OpenLIT](https://github.com/openlit/openlit) is an OpenTelemetry-native tool for monitoring Ollama Applications & GPUs using traces and metrics.
-- [HoneyHive](https://docs.honeyhive.ai/integrations/ollama) is an AI observability and evaluation platform for AI agents. Use HoneyHive to evaluate agent performance, interrogate failures, and monitor quality in production.
-- [Langfuse](https://langfuse.com/docs/integrations/ollama) is an open source LLM observability platform that enables teams to collaboratively monitor, evaluate and debug AI applications.
-- [MLflow Tracing](https://mlflow.org/docs/latest/llms/tracing/index.html#automatic-tracing) is an open source LLM observability tool with a convenient API to log and visualize traces, making it easy to debug and evaluate GenAI applications.
+- [Opik](https://www.comet.com/docs/opik/cookbook/ollama)은 포괄적인 추적, 자동화된 평가 및 프로덕션 준비된 대시보드로 LLM 애플리케이션, RAG 시스템 및 에이전트 워크플로우를 디버그, 평가 및 모니터링하기 위한 오픈소스 플랫폼입니다. Opik은 Ollama와의 네이티브 통합을 지원합니다.
+- [Lunary](https://lunary.ai/docs/integrations/ollama)는 선도적인 오픈소스 LLM 관찰 가능성 플랫폼입니다. 실시간 분석, 프롬프트 템플릿 관리, PII 마스킹 및 포괄적인 에이전트 추적과 같은 다양한 엔터프라이즈급 기능을 제공합니다.
+- [OpenLIT](https://github.com/openlit/openlit)은 추적과 메트릭을 사용하여 Ollama 애플리케이션 및 GPU를 모니터링하기 위한 OpenTelemetry 네이티브 도구입니다.
+- [HoneyHive](https://docs.honeyhive.ai/integrations/ollama)는 AI 에이전트를 위한 AI 관찰 가능성 및 평가 플랫폼입니다. HoneyHive를 사용하여 에이전트 성능을 평가하고, 실패를 조사하며, 프로덕션에서 품질을 모니터링할 수 있습니다.
+- [Langfuse](https://langfuse.com/docs/integrations/ollama)는 팀이 AI 애플리케이션을 협업적으로 모니터링, 평가 및 디버그할 수 있게 해주는 오픈소스 LLM 관찰 가능성 플랫폼입니다.
+- [MLflow Tracing](https://mlflow.org/docs/latest/llms/tracing/index.html#automatic-tracing)은 편리한 API로 추적을 기록하고 시각화하여 GenAI 애플리케이션을 쉽게 디버그하고 평가할 수 있게 해주는 오픈소스 LLM 관찰 가능성 도구입니다.
