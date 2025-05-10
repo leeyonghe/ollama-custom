@@ -230,27 +230,23 @@ func convertFromSafetensors(files map[string]string, baseLayers []*layerGGML, is
 		return nil, err
 	}
 	defer os.RemoveAll(tmpDir)
-	// Set up a root to validate paths
-	root, err := os.OpenRoot(tmpDir)
-	if err != nil {
-		return nil, err
-	}
-	defer root.Close()
 
 	for fp, digest := range files {
 		if !fs.ValidPath(fp) {
 			return nil, fmt.Errorf("%w: %s", errFilePath, fp)
 		}
-		if _, err := root.Stat(fp); err != nil && !errors.Is(err, fs.ErrNotExist) {
-			// Path is likely outside the root
-			return nil, fmt.Errorf("%w: %s: %s", errFilePath, err, fp)
+
+		// Validate the path is within tmpDir
+		absPath := filepath.Join(tmpDir, fp)
+		if !strings.HasPrefix(absPath, tmpDir) {
+			return nil, fmt.Errorf("%w: %s: path outside root", errFilePath, fp)
 		}
 
 		blobPath, err := GetBlobsPath(digest)
 		if err != nil {
 			return nil, err
 		}
-		if err := createLink(blobPath, filepath.Join(tmpDir, fp)); err != nil {
+		if err := createLink(blobPath, absPath); err != nil {
 			return nil, err
 		}
 	}
